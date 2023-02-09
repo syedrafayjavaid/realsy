@@ -54,7 +54,7 @@ services:
     # Because the frontend renders on both the server-side and client-side, we need to be able to access the backend
     # container as localhost from the frontend container. To accomplish this, the frontend container runs in the
     # backend containers network, and the frontend port is exposed in the backend container as well
-    # network_mode: "service:backend"
+    network_mode: "service:backend"
 
 volumes:
   realsy_database: {}
