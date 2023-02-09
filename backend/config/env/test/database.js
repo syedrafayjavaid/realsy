@@ -1,0 +1,21 @@
+const testDatabaseConfig = () => ({
+    defaultConnection: "default",
+    connections: {
+        default: {
+            connector: "bookshelf",
+            settings: {
+                client: 'sqlite',
+                filename: '.tmp/test.db',
+            },
+            options: {
+                useNullAsDefault: true,
+                pool: {
+                    min: 0,
+                    max: 1,
+                },
+            },
+        },
+    },
+});
+
+module.exports = testDatabaseConfig;

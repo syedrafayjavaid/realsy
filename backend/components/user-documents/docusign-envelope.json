@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_user_documents_docusign_envelopes",
+  "info": {
+    "name": "DocusignEnvelope",
+    "icon": "envelope-open-text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "templateId": {
+      "type": "string"
+    },
+    "envelopeId": {
+      "type": "string"
+    },
+    "signers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-documents.signer"
+    },
+    "accessCode": {
+      "type": "string"
+    }
+  }
+}

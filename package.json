@@ -1,0 +1,50 @@
+{
+  "name": "realsy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "subpkg install",
+    "build": "subpkg run build",
+    "start": "concurrently 'npm run api' 'npm run frontend'",
+    "start:dev": "concurrently 'npm run api:dev' 'npm run frontend:dev'",
+    "start:test-env": "concurrently 'npm run api:test-env' 'npm run frontend:dev'",
+    "start:docker": "docker-compose up -d",
+    "stop:docker": "docker-compose down",
+    "start:database": "docker-compose up -d database",
+    "stop:database": "docker-compose down",
+    "api": "cd backend && npm start",
+    "api:dev": "cd backend && npm run start:dev",
+    "api:test-env": "cd backend && PORT=3001 npm run start:test-env",
+    "frontend": "cd frontend && npm start",
+    "frontend:dev": "cd frontend && npm run start:dev",
+    "test": "cd frontend && npm run test && cd ../backend && npm run test",
+    "test:unit": "cd backend && npm run test:unit && cd ../frontend && npm run test:unit",
+    "test:integration": "cd backend && npm run test:integration && cd ../frontend && npm run test:integration",
+    "test:e2e": "start-server-and-test start:test-env 3001 'cypress run'",
+    "cypress:open": "start-server-and-test start:test-env 3001 'cypress open'",
+    "cypress:run": "start-server-and-test start:test-env 3001 'cypress run'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanraftery/realsy.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jonathanraftery/realsy/issues"
+  },
+  "devDependencies": {
+    "@types/faker": "^5.1.5",
+    "cypress": "^6.2.0",
+    "faker": "^5.1.0",
+    "start-server-and-test": "^1.11.6",
+    "subpackage": "^1.1.0"
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "request": "^2.88.2"
+  },
+  "subPackages": [
+    "backend",
+    "frontend"
+  ]
+}

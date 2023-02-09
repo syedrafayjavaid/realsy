@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "content_pages",
+  "info": {
+    "name": "Content Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "bodyContent": {
+      "type": "dynamiczone",
+      "components": [
+        "content.hero-section",
+        "content.rich-body-text",
+        "content.savings-slider",
+        "content.user-guide-box",
+        "content.button",
+        "content.image"
+      ]
+    },
+    "htmlTitle": {
+      "type": "string"
+    },
+    "published": {
+      "type": "boolean"
+    }
+  }
+}

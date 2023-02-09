@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_forms_page_breaks",
+  "info": {
+    "name": "pageBreak",
+    "icon": "equals"
+  },
+  "options": {},
+  "attributes": {
+    "always": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

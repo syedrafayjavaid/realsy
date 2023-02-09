@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "reviewGoalsSteps",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "microStep1": {
+      "type": "boolean"
+    },
+    "microStep2": {
+      "type": "boolean"
+    },
+    "microStep3": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_listing_steps_review_goals_steps"
+}

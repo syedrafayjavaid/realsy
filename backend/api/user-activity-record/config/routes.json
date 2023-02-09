@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-activity-records/mine",
+      "handler": "user-activity-record.mine",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-activity-records/check-new",
+      "handler": "user-activity-record.checkNew",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-activity-records/mine",
+      "handler": "user-activity-record.findMine",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-activity-records/mark-seen",
+      "handler": "user-activity-record.markSeen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-activity-records",
+      "handler": "user-activity-record.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-activity-records/count",
+      "handler": "user-activity-record.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-activity-records/:id",
+      "handler": "user-activity-record.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-activity-records",
+      "handler": "user-activity-record.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-activity-records/:id",
+      "handler": "user-activity-record.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-activity-records/:id",
+      "handler": "user-activity-record.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_forms_form_input_extras",
+  "info": {
+    "name": "formInputExtra",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "tooltip": {
+      "type": "richtext"
+    }
+  }
+}

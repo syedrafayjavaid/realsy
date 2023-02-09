@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/user-documents/webhooks/envelope-complete",
+      "handler": "user-document.webhookEnvelopeComplete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-documents/:id/signing-url",
+      "handler": "user-document.getSigningUrl",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-documents",
+      "handler": "user-document.find",
+      "config": {
+        "policies": ["filter-to-user-involved"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-documents/count",
+      "handler": "user-document.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-documents/:id",
+      "handler": "user-document.findOne",
+      "config": {
+        "policies": ["is-involved"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-documents",
+      "handler": "user-document.create",
+      "config": {
+        "policies": ["set-owner"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-documents/:id",
+      "handler": "user-document.update",
+      "config": {
+        "policies": ["is-owner"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-documents/:id",
+      "handler": "user-document.delete",
+      "config": {
+        "policies": ["is-owner"]
+      }
+    }
+  ]
+}

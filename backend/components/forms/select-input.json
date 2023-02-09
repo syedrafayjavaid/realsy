@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_forms_select_inputs",
+  "info": {
+    "name": "selectInput",
+    "icon": "level-down-alt"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "forms.select-option"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "extra": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-input-extra"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_DB: realsy
+      POSTGRES_USER: realsy
+      POSTGRES_PASSWORD: realsy
+      PG_DATA: /var/lib/postgresql/data
+    volumes:
+      - realsy_database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  backend:
+    build: ./backend
+    env_file:
+      - backend/.env
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: database
+      DATABASE_PORT: 5432
+      DATABASE_NAME: realsy
+      DATABASE_USERNAME: realsy
+      DATABASE_PASSWORD: realsy
+      HOST: 0.0.0.0
+      PORT: 3001
+    volumes:
+      - ./backend:/app:delegated
+      - /app/node_modules
+    ports:
+      - 3000:3000
+      - 3001:3001
+    depends_on:
+      - database
+
+  frontend:
+    build: ./frontend
+    env_file:
+      - frontend/.env
+    environment:
+      BASE_URL: http://localhost:3000
+      API_URL: http://localhost:3001
+      UPLOADS_URL: http://localhost:3001
+      CMS_URL: http://localhost:3001
+      CMS_IMAGES_URL: http://localhost:3001
+      PORT: 3000
+    volumes:
+      - ./frontend:/app:delegated
+      - /app/node_modules
+    depends_on:
+      - backend
+    # Because the frontend renders on both the server-side and client-side, we need to be able to access the backend
+    # container as localhost from the frontend container. To accomplish this, the frontend container runs in the
+    # backend containers network, and the frontend port is exposed in the backend container as well
+    network_mode: "service:backend"
+
+volumes:
+  realsy_database: {}

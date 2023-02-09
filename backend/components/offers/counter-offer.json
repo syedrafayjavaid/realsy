@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "components_offers_counter_offers",
+  "info": {
+    "name": "counterOffer",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "datetime": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "closingDate": {
+      "type": "date"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "offerDocument": {
+      "model": "user-document"
+    },
+    "agentNotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "closingCostsPaid": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "global_contents",
+  "info": {
+    "name": "Global Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "mainMenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.main-menu-entry"
+    },
+    "footerMenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.main-menu-entry"
+    },
+    "chatButtonText": {
+      "type": "string"
+    },
+    "newsletterSignUpText": {
+      "type": "string"
+    },
+    "footerSocialMenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.social-menu-entry"
+    },
+    "defaultUserPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "defaultListingPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

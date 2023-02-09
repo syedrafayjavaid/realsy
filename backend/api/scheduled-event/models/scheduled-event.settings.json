@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "scheduled_events",
+  "info": {
+    "name": "Scheduled Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "datetime": {
+      "type": "datetime"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "listing": {
+      "model": "listing",
+      "via": "scheduledEvents"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "scheduledEvents"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending_realsy",
+        "scheduled"
+      ],
+      "default": "pending_realsy"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "requested_visit"
+      ]
+    },
+    "userAvailability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "users.availability"
+    },
+    "listerAvailability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "users.availability"
+    }
+  }
+}

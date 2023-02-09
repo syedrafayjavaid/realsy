@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_forms_radio_button_groups",
+  "info": {
+    "name": "radioButtonGroup",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "radioButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "forms.radio-button"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "extra": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-input-extra"
+    }
+  }
+}

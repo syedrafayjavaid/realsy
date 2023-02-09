@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "microStep",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "complete": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_listing_steps_micro_steps"
+}

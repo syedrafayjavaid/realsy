@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_forms_select_options",
+  "info": {
+    "name": "selectOption",
+    "icon": "ellipsis-v"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

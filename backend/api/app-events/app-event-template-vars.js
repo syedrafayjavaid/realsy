@@ -1,0 +1,30 @@
+/**
+ * Enum of app event template variable codes
+ */
+export const AppEventTemplateVars = {
+    UserEmail: 'user-email',
+    UserPhone: 'user-phone',
+    OwnerEmail: 'owner-email',
+    OwnerPhone: 'owner-phone',
+    ListingAddress: 'listing-address',
+    ListingShortAddress: 'listing-short-address',
+    ListingOwnerLink: 'listing-owner-link',
+    ListingAdminLink: 'listing-admin-link',
+    AgentEmail: 'agent-email',
+    AgentPhone: 'agent-phone',
+    RecipientEmail: 'recipient-email',
+    RecipientPhone: 'recipient-phone',
+    SenderName: 'sender-name',
+    Message: 'message',
+    LengthConstrainedMessage: 'length-constrained-message',
+    ChatLink: 'chat-link',
+    CalendarLink: 'calendar-link',
+    AdminLink: 'admin-link',
+    OfferOfferorLink: 'offeror-link',
+    OfferListerLink: 'lister-link',
+    ListerEmail: 'lister-email',
+    ListerPhone: 'lister-phone',
+    OfferorEmail: 'offeror-email',
+    OfferorPhone: 'offeror-phone',
+    ClosingLink: 'closing-link',
+};

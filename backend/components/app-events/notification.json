@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_app_events_notifications",
+  "info": {
+    "name": "ExternalNotification",
+    "icon": "exclamation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "recipientEmail": {
+      "type": "string"
+    },
+    "recipientPhone": {
+      "type": "string"
+    },
+    "template": {
+      "type": "text"
+    },
+    "emailSubject": {
+      "type": "string"
+    },
+    "phoneTemplate": {
+      "type": "text"
+    }
+  }
+}

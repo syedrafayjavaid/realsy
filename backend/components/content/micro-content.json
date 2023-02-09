@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "microContent",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_content_micro_contents"
+}

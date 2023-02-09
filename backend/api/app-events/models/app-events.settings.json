@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_events",
+  "info": {
+    "name": "App Events",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "eventCode": {
+      "type": "enumeration",
+      "enum": [
+        "new_user",
+        "listing_created",
+        "listing_approved",
+        "offer_created",
+        "offer_approved",
+        "offer_accepted",
+        "offer_declined",
+        "counter_offer_declined",
+        "offer_countered",
+        "offer_recountered",
+        "event_scheduled",
+        "visit_requested",
+        "new_chat_message"
+      ],
+      "unique": true
+    },
+    "notifications": {
+      "type": "dynamiczone",
+      "components": [
+        "app-events.admin-notification",
+        "app-events.notification"
+      ]
+    }
+  }
+}

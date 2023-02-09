@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "user_activity_records",
+  "info": {
+    "name": "User Activity Record"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "user": {
+      "via": "activityRecords",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "listing": {
+      "model": "listing"
+    },
+    "seenAt": {
+      "type": "datetime"
+    },
+    "typeCode": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "seen": {
+      "type": "boolean",
+      "default": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "iconUrl": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "createUserNotification": {
+      "type": "boolean",
+      "default": false
+    },
+    "extra": {
+      "type": "json"
+    }
+  }
+}

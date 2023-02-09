@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_forms_checkbox_inputs",
+  "info": {
+    "name": "checkboxInput",
+    "icon": "check-square"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

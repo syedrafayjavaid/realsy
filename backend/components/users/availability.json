@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "components_users_availabilities",
+  "info": {
+    "name": "Availability",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "sundayStart": {
+      "type": "time"
+    },
+    "sundayEnd": {
+      "type": "time"
+    },
+    "mondayStart": {
+      "type": "time"
+    },
+    "mondayEnd": {
+      "type": "time"
+    },
+    "tuesdayStart": {
+      "type": "time"
+    },
+    "tuesdayEnd": {
+      "type": "time"
+    },
+    "wednesdayStart": {
+      "type": "time"
+    },
+    "wednesdayEnd": {
+      "type": "time"
+    },
+    "thursdayStart": {
+      "type": "time"
+    },
+    "thursdayEnd": {
+      "type": "time"
+    },
+    "fridayStart": {
+      "type": "time"
+    },
+    "fridayEnd": {
+      "type": "time"
+    },
+    "saturdayStart": {
+      "type": "time"
+    },
+    "saturdayEnd": {
+      "type": "time"
+    }
+  }
+}

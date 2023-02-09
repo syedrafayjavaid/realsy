@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "app_settings",
+  "info": {
+    "name": "App Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "defaultAgent": {
+      "model": "agent"
+    },
+    "listingSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.meet-team-steps"
+    },
+    "closingSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.meet-team-steps"
+    }
+  }
+}

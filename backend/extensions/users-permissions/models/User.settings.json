@@ -1,0 +1,182 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "savedListings": {
+      "collection": "listing"
+    },
+    "listings": {
+      "via": "owner",
+      "collection": "listing"
+    },
+    "documents": {
+      "via": "owner",
+      "collection": "user-document"
+    },
+    "activityRecords": {
+      "collection": "user-activity-record",
+      "via": "user",
+      "private": true
+    },
+    "scheduledEvents": {
+      "via": "user",
+      "collection": "scheduled-event"
+    },
+    "profilePhoto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "chats": {
+      "via": "users",
+      "collection": "chat"
+    },
+    "agent": {
+      "via": "users",
+      "model": "agent"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "contactText": {
+      "type": "boolean"
+    },
+    "contactEmail": {
+      "type": "boolean"
+    },
+    "contactPhone": {
+      "type": "boolean"
+    },
+    "availableSundayStart": {
+      "type": "time"
+    },
+    "availableSundayEnd": {
+      "type": "time"
+    },
+    "availableMondayStart": {
+      "type": "time"
+    },
+    "availableMondayEnd": {
+      "type": "time"
+    },
+    "availableTuesdayStart": {
+      "type": "time"
+    },
+    "availableTuesdayEnd": {
+      "type": "time"
+    },
+    "availableWednesdayStart": {
+      "type": "time"
+    },
+    "availableWednesdayEnd": {
+      "type": "time"
+    },
+    "availableThursdayStart": {
+      "type": "time"
+    },
+    "availableThursdayEnd": {
+      "type": "time"
+    },
+    "availableFridayStart": {
+      "type": "time"
+    },
+    "availableFridayEnd": {
+      "type": "time"
+    },
+    "availableSaturdayStart": {
+      "type": "time"
+    },
+    "availableSaturdayEnd": {
+      "type": "time"
+    },
+    "preApprovedAmount": {
+      "type": "integer"
+    },
+    "daysLookingToBuy": {
+      "type": "integer"
+    },
+    "alsoSellingAHome": {
+      "type": "boolean"
+    },
+    "alreadyFoundHome": {
+      "type": "boolean"
+    },
+    "canListExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "isAgent": {
+      "type": "boolean",
+      "default": false
+    },
+    "documentsInvolved": {
+      "via": "usersInvolved",
+      "collection": "user-document"
+    },
+    "notifications": {
+      "via": "user",
+      "collection": "user-notifications"
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    }
+  }
+}

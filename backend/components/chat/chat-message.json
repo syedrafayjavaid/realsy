@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "components_chat_chat_messages",
+  "info": {
+    "name": "chatMessage",
+    "icon": "edit",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "text",
+      "required": true,
+      "maxLength": 512
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "datetimeSent": {
+      "type": "datetime"
+    }
+  }
+}

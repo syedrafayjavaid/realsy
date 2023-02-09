@@ -1,0 +1,67 @@
+export const defaultListingSellingSteps = [
+    {
+        name: "Meet My Realsy Team",
+        microSteps: [
+            "Micro step 1",
+            "Micro step 2",
+            "Micro step 3",
+            "Micro step 4",
+            "Micro step 5",
+            "Micro step 6",
+            "Micro step 7",
+            "Micro step 8",
+        ],
+    },
+    {
+        name: "Review My Goals",
+        microSteps: [
+            "Micro step 1",
+            "Micro step 2",
+            "Micro step 3",
+            "Micro step 4",
+            "Micro step 5",
+            "Micro step 6",
+            "Micro step 7",
+            "Micro step 8",
+        ],
+    },
+    {
+        name: "Schedule My Photos",
+        microSteps: [
+            "Micro step 1",
+            "Micro step 2",
+            "Micro step 3",
+            "Micro step 4",
+            "Micro step 5",
+            "Micro step 6",
+            "Micro step 7",
+            "Micro step 8",
+        ],
+    },
+    {
+        name: "Prepare My Home",
+        microSteps: [
+            "Micro step 1",
+            "Micro step 2",
+            "Micro step 3",
+            "Micro step 4",
+            "Micro step 5",
+            "Micro step 6",
+            "Micro step 7",
+            "Micro step 8",
+        ],
+    },
+    {
+        name: "Review Listing",
+        microSteps: [
+            "Micro step 1",
+            "Micro step 2",
+            "Micro step 3",
+            "Micro step 4",
+            "Micro step 5",
+            "Micro step 6",
+            "Micro step 7",
+            "Micro step 8",
+        ],
+    },
+];

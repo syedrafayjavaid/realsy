@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "components_listing_steps_meet_team_steps",
+  "info": {
+    "name": "macroStep",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "microSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.micro-step"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

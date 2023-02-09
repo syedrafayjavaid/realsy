@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "listings",
+  "info": {
+    "name": "Listing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "bathroomCount": {
+      "type": "decimal"
+    },
+    "bedroomCount": {
+      "type": "decimal"
+    },
+    "squareFootage": {
+      "type": "integer"
+    },
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "listings"
+    },
+    "homeType": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "Condo",
+        "Lot",
+        "Multi_Family",
+        "Commercial",
+        "Other"
+      ],
+      "default": "Home"
+    },
+    "documents": {
+      "via": "listing",
+      "collection": "user-document"
+    },
+    "scheduledEvents": {
+      "via": "listing",
+      "collection": "scheduled-event"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "AL",
+        "AK",
+        "AZ",
+        "AR",
+        "CA",
+        "CO",
+        "CT",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "ID",
+        "IL",
+        "IN",
+        "IA",
+        "KS",
+        "KY",
+        "LA",
+        "ME",
+        "MD",
+        "MA",
+        "MI",
+        "MN",
+        "MS",
+        "MO",
+        "MT",
+        "NE",
+        "NV",
+        "NH",
+        "NJ",
+        "NM",
+        "NY",
+        "NC",
+        "ND",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VT",
+        "VA",
+        "WA",
+        "WV",
+        "WI",
+        "WY"
+      ],
+      "required": true
+    },
+    "askingPrice": {
+      "type": "integer",
+      "required": false
+    },
+    "zipCode": {
+      "type": "integer",
+      "required": true
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "chats": {
+      "via": "listing",
+      "collection": "chat"
+    },
+    "agent": {
+      "via": "listings",
+      "model": "agent"
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.meet-team-steps"
+    },
+    "realsyTips": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.micro-step"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending_realsy",
+        "active",
+        "closed",
+        "sale_pending"
+      ],
+      "default": "pending_realsy"
+    },
+    "userUnsureOfValue": {
+      "type": "boolean"
+    },
+    "estimatedPayoff": {
+      "type": "integer"
+    },
+    "offers": {
+      "via": "listing",
+      "collection": "offer"
+    },
+    "desiredNetAmount": {
+      "type": "integer"
+    },
+    "hadInvalidAddress": {
+      "type": "boolean"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "listingOrganization": {
+      "type": "string"
+    },
+    "listingAgentName": {
+      "type": "string"
+    },
+    "listingAgentEmail": {
+      "type": "string"
+    },
+    "listingAgentPhoneNum": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    }
+  }
+}

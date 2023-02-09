@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_components_rich_body_texts",
+  "info": {
+    "name": "RichBodyText",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

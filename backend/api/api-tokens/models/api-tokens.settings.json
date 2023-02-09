@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "api_tokens",
+  "info": {
+    "name": "API Tokens",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "homeJunctionToken": {
+      "type": "string"
+    },
+    "docusignExpiration": {
+      "type": "datetime"
+    },
+    "homeJunctionExpiration": {
+      "type": "datetime"
+    },
+    "docusignToken": {
+      "type": "text"
+    }
+  }
+}

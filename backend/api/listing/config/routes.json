@@ -1,0 +1,123 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/listings/relationless",
+      "handler": "listing.relationlessFind"
+    },
+    {
+      "method": "PUT",
+      "path": "/listings/mark-tip",
+      "handler": "listing.markTip"
+    },
+    {
+      "method": "GET",
+      "path": "/listings/my-saved",
+      "handler": "listing.getMySaved",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/check-offer",
+      "handler": "listing.checkOffer",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/check-visit-request",
+      "handler": "listing.checkVisitRequest",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/get-offers",
+      "handler": "listing.getOffers",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/check-value",
+      "handler": "listing.checkHomeValue",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/listings/set-favorite",
+      "handler": "listing.setFavorite",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/check-favorite",
+      "handler": "listing.checkFavorite",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings",
+      "handler": "listing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/count",
+      "handler": "listing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/listings/:id/main-photo",
+      "handler": "listing.getMainPhoto"
+    },
+    {
+      "method": "GET",
+      "path": "/listings/:id",
+      "handler": "listing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/listings",
+      "handler": "listing.create",
+      "config": {
+        "policies": ["setOwner", "setDefaultStatus", "restrictExternalListings"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/listings/:id",
+      "handler": "listing.update",
+      "config": {
+        "policies": ["isOwner"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/listings/:id",
+      "handler": "listing.delete",
+      "config": {
+        "policies": ["isOwner"]
+      }
+    }
+  ]
+}

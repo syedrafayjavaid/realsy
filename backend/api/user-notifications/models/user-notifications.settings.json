@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_notifications",
+  "info": {
+    "name": "User Notifications",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "relatedContentType": {
+      "type": "string"
+    },
+    "relatedContentId": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "notifications"
+    },
+    "link": {
+      "type": "string"
+    },
+    "secondaryRelatedContentType": {
+      "type": "string"
+    },
+    "secondaryRelatedContentId": {
+      "type": "string"
+    }
+  }
+}

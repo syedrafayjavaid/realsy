@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_menu_menu_entries",
+  "info": {
+    "name": "MenuEntry",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "urlTemplate": {
+      "type": "string"
+    }
+  }
+}

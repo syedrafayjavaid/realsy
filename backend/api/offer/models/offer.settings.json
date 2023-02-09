@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "offers",
+  "info": {
+    "name": "Offer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "listing": {
+      "model": "listing",
+      "via": "offers"
+    },
+    "offeror": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "itemsIncluded": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "preApprovedForAmount": {
+      "type": "boolean"
+    },
+    "earnestMoneyDeposit": {
+      "type": "decimal"
+    },
+    "financingMethod": {
+      "type": "string"
+    },
+    "lenderName": {
+      "type": "string"
+    },
+    "loanOfficerName": {
+      "type": "string"
+    },
+    "loanOfficerPhoneNumber": {
+      "type": "string"
+    },
+    "estimatedInterestRate": {
+      "type": "float"
+    },
+    "estimatedPrincipal": {
+      "type": "float"
+    },
+    "includedInspections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "preferredCompanies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "haveTitleCompany": {
+      "type": "boolean",
+      "default": false
+    },
+    "otherNotes": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending_realsy",
+        "pending_lister",
+        "accepted",
+        "countered",
+        "declined"
+      ],
+      "default": "pending_lister"
+    },
+    "counterOffers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "offers.counter-offer"
+    },
+    "agentNotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    },
+    "closingSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-steps.meet-team-steps"
+    },
+    "desiredClosingDate": {
+      "type": "date"
+    },
+    "closingCostsPaid": {
+      "type": "string"
+    },
+    "offerDocument": {
+      "model": "user-document"
+    }
+  }
+}

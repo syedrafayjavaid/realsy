@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "components_components_user_guide_boxes",
+  "info": {
+    "name": "UserGuideBox",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "bulletPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.bullet-point"
+    }
+  }
+}

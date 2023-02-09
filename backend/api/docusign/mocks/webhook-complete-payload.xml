@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocuSignEnvelopeInformation
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.docusign.net/API/3.0"
+>
+    <EnvelopeStatus>
+        <RecipientStatuses>
+            <RecipientStatus>
+                <Type>Signer</Type>
+                <Email>user@realsyhomes.com</Email>
+                <UserName>User</UserName>
+                <RoutingOrder>1</RoutingOrder>
+                <Sent>2020-03-09T06:16:53.143</Sent>
+                <Delivered>2020-03-09T06:18:36.783</Delivered>
+                <Signed>2020-03-09T06:18:41.017</Signed>
+                <DeclineReason xsi:nil="true"/>
+                <Status>Completed</Status>
+                <RecipientIPAddress>68.13.81.238</RecipientIPAddress>
+                <ClientUserId>user@realsyhomes.com</ClientUserId>
+                <CustomFields/>
+                <TabStatuses>
+                    <TabStatus>
+                        <TabType>SignHere</TabType>
+                        <Status>Signed</Status>
+                        <XPosition>906</XPosition>
+                        <YPosition>280</YPosition>
+                        <TabLabel>Signature
+                            1_SignHere_bf841fe7-a7d4-4f2f-81fd-3cf6290541a2_dd5cd69d-b8e9-4f51-b624-8a6a1bac9264
+                        </TabLabel>
+                        <TabName/>
+                        <DocumentID>1</DocumentID>
+                        <PageNumber>1</PageNumber>
+                    </TabStatus>
+                </TabStatuses>
+                <AccountStatus>Active</AccountStatus>
+                <RecipientId>dd5cd69d-b8e9-4f51-b624-8a6a1bac9264</RecipientId>
+            </RecipientStatus>
+        </RecipientStatuses>
+        <TimeGenerated>2020-04-09T06:19:01.9489937</TimeGenerated>
+        <EnvelopeID>dummy-envelope-id</EnvelopeID>
+        <Subject>Realsy Homes: Document signature requested</Subject>
+        <UserName>User Name</UserName>
+        <Email>user@realsyhomes.com</Email>
+        <Status>Completed</Status>
+        <Created>2020-04-09T06:16:52.783</Created>
+        <Sent>2020-04-09T06:16:53.173</Sent>
+        <Delivered>2020-04-09T06:18:37.313</Delivered>
+        <Signed>2020-04-09T06:18:41.017</Signed>
+        <Completed>2020-04-09T06:18:41.017</Completed>
+        <ACStatus>Original</ACStatus>
+        <ACStatusDate>2020-04-09T06:16:52.783</ACStatusDate>
+        <ACHolder>Realsy Homes</ACHolder>
+        <ACHolderEmail>system@realsyhomes.com</ACHolderEmail>
+        <ACHolderLocation>DocuSign</ACHolderLocation>
+        <SigningLocation>Online</SigningLocation>
+        <SenderIPAddress>68.13.81.238</SenderIPAddress>
+        <EnvelopePDFHash/>
+        <CustomFields/>
+        <AutoNavigation>true</AutoNavigation>
+        <EnvelopeIdStamping>true</EnvelopeIdStamping>
+        <AuthoritativeCopy>false</AuthoritativeCopy>
+        <DocumentStatuses>
+            <DocumentStatus>
+                <ID>1</ID>
+                <Name>Realsy Document</Name>
+                <TemplateName/>
+                <Sequence>1</Sequence>
+            </DocumentStatus>
+        </DocumentStatuses>
+    </EnvelopeStatus>
+</DocuSignEnvelopeInformation>

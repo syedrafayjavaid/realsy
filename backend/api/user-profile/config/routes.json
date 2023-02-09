@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-profiles/user-photo",
+      "handler": "user-profile.userPhoto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-profiles/me",
+      "handler": "user-profile.me",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-profiles/me",
+      "handler": "user-profile.updateMe",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-profiles/:provider/callback",
+      "handler": "user-profile.oauthCallback",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_app_events_admin_notifications",
+  "info": {
+    "name": "AdminNotification",
+    "icon": "haykal"
+  },
+  "options": {},
+  "attributes": {
+    "template": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/scheduled-events/request-visit",
+      "handler": "scheduled-event.requestVisit",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduled-events/mine",
+      "handler": "scheduled-event.findMine",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduled-events/my-requested",
+      "handler": "scheduled-event.findMyRequested",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduled-events",
+      "handler": "scheduled-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduled-events/count",
+      "handler": "scheduled-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduled-events/:id",
+      "handler": "scheduled-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scheduled-events",
+      "handler": "scheduled-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scheduled-events/:id",
+      "handler": "scheduled-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scheduled-events/:id",
+      "handler": "scheduled-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

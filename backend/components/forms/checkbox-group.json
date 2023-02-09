@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_forms_checkbox_groups",
+  "info": {
+    "name": "checkboxGroup",
+    "icon": "tasks"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "forms.checkbox-input"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "extra": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-input-extra"
+    }
+  }
+}

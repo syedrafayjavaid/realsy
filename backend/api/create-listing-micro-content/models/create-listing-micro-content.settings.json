@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "create_listing_micro_contents",
+  "info": {
+    "name": "Create Listing Micro Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "page1_heading": {
+      "type": "string"
+    },
+    "page1_sidebar": {
+      "type": "richtext"
+    },
+    "page2_heading": {
+      "type": "string"
+    },
+    "page2_sidebar": {
+      "type": "richtext"
+    },
+    "page3_heading": {
+      "type": "string"
+    },
+    "page3_sidebar": {
+      "type": "richtext"
+    },
+    "page1_estimatedPayoffPopup": {
+      "type": "text"
+    },
+    "page1_desiredNetPopup": {
+      "type": "text"
+    },
+    "page3_availabilityPopup": {
+      "type": "text"
+    }
+  }
+}

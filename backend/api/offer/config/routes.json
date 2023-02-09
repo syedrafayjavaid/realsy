@@ -1,0 +1,97 @@
+{
+  "routes": [
+    {
+      "method": "PUT",
+      "path": "/offers/accept",
+      "handler": "offer.accept",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/offers/decline",
+      "handler": "offer.decline",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/offers/counter",
+      "handler": "offer.counter",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offers/sent",
+      "handler": "offer.getSent",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offers/sent-pending",
+      "handler": "offer.getSentPending",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offers",
+      "handler": "offer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offers/count",
+      "handler": "offer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offers/:id",
+      "handler": "offer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/offers",
+      "handler": "offer.create",
+      "config": {
+        "policies": [
+          "require-listing",
+          "setOfferor",
+          "setDefaultStatus",
+          "translateArrays"
+        ]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/offers/:id",
+      "handler": "offer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/offers/:id",
+      "handler": "offer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

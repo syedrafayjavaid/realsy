@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "components_components_button",
+  "info": {
+    "name": "Button",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "triggerSignIn": {
+      "type": "boolean"
+    },
+    "triggerChat": {
+      "type": "boolean"
+    }
+  }
+}

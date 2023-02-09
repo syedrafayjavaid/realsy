@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "agents",
+  "info": {
+    "name": "Agent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "listings": {
+      "collection": "listing",
+      "via": "agent"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "agent"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "textNotifications": {
+      "type": "boolean",
+      "default": true
+    },
+    "emailNotifications": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

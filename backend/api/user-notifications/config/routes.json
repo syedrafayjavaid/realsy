@@ -1,0 +1,64 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-notifications",
+      "handler": "user-notifications.find",
+      "config": {
+        "policies": [
+          "filter-to-owned"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-notifications/count",
+      "handler": "user-notifications.count",
+      "config": {
+        "policies": [
+          "filter-to-owned"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-notifications/:id",
+      "handler": "user-notifications.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-notifications",
+      "handler": "user-notifications.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-notifications/:id",
+      "handler": "user-notifications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-notifications",
+      "handler": "user-notifications.deleteMany",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-notifications/:id",
+      "handler": "user-notifications.delete",
+      "config": {
+        "policies": ["restrict-to-owner"]
+      }
+    }
+  ]
+}

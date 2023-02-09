@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/create-listing-micro-content",
+      "handler": "create-listing-micro-content.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/create-listing-micro-content",
+      "handler": "create-listing-micro-content.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/create-listing-micro-content",
+      "handler": "create-listing-micro-content.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

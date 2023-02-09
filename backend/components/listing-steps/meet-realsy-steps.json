@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "components_listing_steps_meet_realsy_steps",
+  "info": {
+    "name": "meetRealsySteps",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "microStep1": {
+      "type": "boolean",
+      "default": false
+    },
+    "microStep2": {
+      "type": "boolean",
+      "default": false
+    },
+    "microStep3": {
+      "type": "boolean"
+    },
+    "microStep4": {
+      "type": "boolean"
+    },
+    "microStep5": {
+      "type": "boolean"
+    }
+  }
+}

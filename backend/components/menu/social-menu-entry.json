@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "components_menu_social_menu_entries",
+  "info": {
+    "name": "SocialMenuEntry",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram"
+      ]
+    }
+  }
+}

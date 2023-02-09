@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_micro_content_riches",
+  "info": {
+    "name": "microContentRich",
+    "icon": "stream"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

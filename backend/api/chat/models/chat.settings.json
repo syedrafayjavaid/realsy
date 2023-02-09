@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "chats",
+  "info": {
+    "name": "chat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "chats",
+      "dominant": true
+    },
+    "listing": {
+      "model": "listing",
+      "via": "chats"
+    },
+    "messages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chat.chat-message",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "user_documents",
+  "info": {
+    "name": "User Document",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "documents"
+    },
+    "listing": {
+      "model": "listing",
+      "via": "documents"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "listing"
+      ]
+    },
+    "original": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "signed": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "docusignEnvelope": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user-documents.docusign-envelope"
+    },
+    "usersInvolved": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "documentsInvolved",
+      "dominant": true
+    }
+  }
+}

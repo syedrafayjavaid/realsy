@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_forms_text_inputs",
+  "info": {
+    "name": "input",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "fieldName": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "long_text",
+        "currency",
+        "integer",
+        "decimal",
+        "tags",
+        "date",
+        "phone"
+      ]
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "extra": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.form-input-extra"
+    }
+  }
+}

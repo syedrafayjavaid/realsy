@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_images",
+  "info": {
+    "name": "image",
+    "icon": "plus-square"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overlayText": {
+      "type": "string"
+    }
+  }
+}

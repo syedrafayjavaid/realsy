@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_components_bullet_points",
+  "info": {
+    "name": "BulletPoint",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "string"
+    }
+  }
+}
