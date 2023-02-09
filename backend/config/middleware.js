@@ -1,5 +1,5 @@
 import { ConfigKey } from "config/config-keys";
-
+console.log("This file is beign called");
 const middlewareConfig = ({ env }) => ({
     timeout: 100,
     load: {
@@ -73,7 +73,7 @@ const middlewareConfig = ({ env }) => ({
             value: "SAMEORIGIN",
         },
         xss: {
-            enabled: true,
+            enabled: false,
             mode: "block",
         },
         cors: {
