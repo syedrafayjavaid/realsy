@@ -1,6 +1,6 @@
-import { ConfigKey } from "config/config-keys";
+import {ConfigKey} from "config/config-keys";
 
-const serverConfig = ({ env }) => ({
+const serverConfig = ({env}) => ({
     host: env(ConfigKey.host, 'localhost'),
     port: env.int(ConfigKey.port, 3001),
     proxy: true,
