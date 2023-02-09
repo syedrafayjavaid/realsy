@@ -1,7 +1,7 @@
 import axios from "axios";
 import axiosBetterStacktrace from "axios-better-stacktrace";
-import {ApiRoutes} from "api/api-routes";
-import {getCurrentApiToken} from "api/auth/auth-functions";
+import { ApiRoutes } from "api/api-routes";
+import { getCurrentApiToken } from "api/auth/auth-functions";
 
 /**
  * Gets an HTTP client configured for the API, authorized with the given API token
@@ -11,7 +11,7 @@ export const getApiClient = (apiToken?: string) => {
     return axios.create({
         baseURL: process.env.NEXT_PUBLIC_API_URL,
         headers: apiToken && apiToken.trim() !== ''
-            ? {Authorization: 'Bearer ' + apiToken}
+            ? { Authorization: 'Bearer ' + apiToken }
             : {},
     });
 };

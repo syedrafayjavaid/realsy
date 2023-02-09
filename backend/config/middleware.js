@@ -6,7 +6,6 @@ const middlewareConfig = ({ env }) => ({
         before: [
             "responseTime",
             "logger",
-            "cors",
             "responses",
             "gzip",
         ],
@@ -75,9 +74,6 @@ const middlewareConfig = ({ env }) => ({
         xss: {
             enabled: false,
             mode: "block",
-        },
-        cors: {
-            enabled: false,
         },
         ip: {
             enabled: false,

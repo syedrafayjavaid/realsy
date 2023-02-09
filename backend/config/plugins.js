@@ -1,6 +1,6 @@
-import {ConfigKey} from "config/config-keys";
+import { ConfigKey } from "config/config-keys";
 
-const pluginConfig = ({env}) => {
+const pluginConfig = ({ env }) => {
     let config = {
         upload: {
             provider: env(ConfigKey.fileUploadProvider) || 'local',
