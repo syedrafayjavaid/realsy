@@ -73,16 +73,16 @@ const middlewareConfig = ({ env }) => ({
             value: "SAMEORIGIN",
         },
         xss: {
-            enabled: true,
+            enabled: false,
             mode: "block",
         },
         cors: {
             enabled: true,
-            whitelist: ['http://23.20.82.14:3001', 'http://23.20.82.14:3000'],
+            whitelist: ['*'],
         },
         ip: {
-            enabled: false,
-            whiteList: ['http://23.20.82.14:3001', 'http://23.20.82.14:3000'],
+            enabled: true,
+            whiteList: ['*'],
             blackList: [],
         },
         language: {
