@@ -77,14 +77,11 @@ const middlewareConfig = ({ env }) => ({
             mode: "block",
         },
         cors: {
-            enabled: true,
-            origin: ['http://23.20.82.14:3001', 'http://23.20.82.14:300'],
-            methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-            headers: ['Content-Type', 'Authorization'],
+            enabled: false,
         },
         ip: {
             enabled: false,
-            whiteList: [],
+            whiteList: ['http://23.20.82.14:3001', 'http://23.20.82.14:3000'],
             blackList: [],
         },
         language: {
