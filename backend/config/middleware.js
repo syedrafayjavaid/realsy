@@ -1,6 +1,6 @@
-import {ConfigKey} from "config/config-keys";
+import { ConfigKey } from "config/config-keys";
 
-const middlewareConfig = ({env}) => ({
+const middlewareConfig = ({ env }) => ({
     timeout: 100,
     load: {
         before: [
@@ -77,7 +77,7 @@ const middlewareConfig = ({env}) => ({
             mode: "block",
         },
         cors: {
-            enabled: true,
+            enabled: false,
         },
         ip: {
             enabled: false,
