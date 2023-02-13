@@ -16,5 +16,5 @@ export enum AppRoute {
     UserMessages = '/account/messages',
     UserProfile = '/account/profile',
     UserSavedListings = '/account/saved-listings',
-    UserListings = '/account/listings',
+    UserListings = '/account/listings'
 }
