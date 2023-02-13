@@ -1,7 +1,7 @@
 import { ConfigKey } from "config/config-keys";
 
 const customConfig = ({ env }) => ({
-    [ConfigKey.frontendUrl]: env(ConfigKey.frontendUrl, 'https://realsy.homes'),
+    [ConfigKey.frontendUrl]: env(ConfigKey.frontendUrl, 'http://localhost:3000'),
 
     [ConfigKey.seedAdminUsername]: env(ConfigKey.seedAdminUsername),
     [ConfigKey.seedAdminEmail]: env(ConfigKey.seedAdminEmail),
