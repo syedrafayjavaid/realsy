@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ListingsMap from 'components/listings/map';
-import {useMainLayout} from "layout/main-layout";
+import { useMainLayout } from "layout/main-layout";
 
 /**
  * The "buy" page
